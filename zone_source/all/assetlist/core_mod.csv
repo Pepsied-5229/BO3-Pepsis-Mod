@@ -1,0 +1,7 @@
+rawfile,cp_mod.cfg
+rawfile,mod.cfg
+rawfile,mp_mod.cfg
+rawfile,ui/t6/lobby/lobbymenubuttons.lua
+rawfile,zm_mod.cfg
+stringtable,gamedata/stats/zm/zm_statstable.csv
+keyvaluepairs,core_mod

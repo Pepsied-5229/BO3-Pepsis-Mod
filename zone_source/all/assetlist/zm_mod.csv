@@ -1,0 +1,4 @@
+rawfile,dummy.cfg
+rawfile,ui/uieditor/datasources.luac
+scriptparsetree,scripts/zm/gametypes/_clientids.gsc
+keyvaluepairs,zm_mod

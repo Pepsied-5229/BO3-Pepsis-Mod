@@ -1,0 +1,10 @@
+index,type,name,resident,streamed,parentStack
+1,string,,0,0,||assetlist
+2,rawfile,mod.cfg,17,0,|zone_source/core_mod.zone|csv
+3,rawfile,cp_mod.cfg,16,0,|zone_source/core_mod.zone|csv
+4,rawfile,mp_mod.cfg,16,0,|zone_source/core_mod.zone|csv
+5,rawfile,zm_mod.cfg,16,0,|zone_source/core_mod.zone|csv
+6,rawfile,ui/t6/lobby/lobbymenubuttons.lua,23557,0,|zone_source/core_mod.zone|csv
+7,stringtable,gamedata/stats/zm/zm_statstable.csv,75286,0,|zone_source/core_mod.zone|csv
+8,keyvaluepairs,core_mod,1092,0,||assetlist
+9,assetlist,,112,0,
