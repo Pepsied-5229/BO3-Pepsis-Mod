@@ -855,3 +855,5 @@ CoD.LobbyButtons.CP_DOA_LEADERBOARD = {
 
 -- youve reached the end of the file. and how sad that the comments end here too. Im sure you REALLY enjoyed them. Not at all annoying in one bit or another even with all my poor grammar and terrible spelling.
 -- But seriously, don't take offense. Im just happy rn. I'll probably read this some time later and scratch my head wondering wtf I was on when writing. Take care. ~Pepsi
+
+-- Present Pepsi: Yeah, idk what I was on when I made these comments 2 years ago...
