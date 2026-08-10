@@ -8,7 +8,7 @@ ignore_missing_shipped,core_common
 ignore_missing_shipped,zm_common
 ignore_missing_shipped,zm_patch
 scriptparsetree,scripts\zm\gametypes\_clientids.gsc
-	file,E:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\pepsis_mod\scripts\zm\gametypes\_clientids.gsc,1784828766,
+	file,E:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\mods\pepsis_mod\scripts\zm\gametypes\_clientids.gsc,1786341474,
 	file,E:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\shared\shared.gsh,1519190452,
 	file,E:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\raw\scripts\zm\_zm_perks.gsh,1519191625,
 rawfile,ui/uieditor/datasources.luac

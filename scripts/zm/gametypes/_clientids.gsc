@@ -17,6 +17,7 @@
 #using scripts\zm\_zm_perks; // using to grant the perk selected by a Q.E.D.
 #using scripts\zm\_zm_powerup_free_perk; // using the stock pre-power perk pause helper
 #using scripts\zm\_zm_stats; // using to preserve ghost-round free-perk statistics
+#using scripts\shared\flag_shared; // using to support script flashing for BOIII community client
 #insert scripts\shared\shared.gsh;
 #insert scripts\zm\_zm_perks.gsh; // using the stock perk identifiers for fixed bottle ordering
 
@@ -1020,4 +1021,35 @@ function qed_perk_patch_give_nearest_perk(position) {
             }
         }
     }
+}
+
+// Supporting script flashing for BOIII community client
+function autoexec monitor_rounds_for_flash() {
+    level endon("end_game");
+    level flag::wait_till("initial_blackscreen_passed");
+    previous_round = level.round_number;
+    for (;;) {
+        current_round = level.round_number;
+        if (current_round != previous_round) {
+            if ((previous_round >= 8) && (previous_round <= 248)) {
+                if ((previous_round % 10) == 8) {
+                    SetDvar("cg_flashScriptHashes", "1");
+                    // IPrintLnBold("Flash Triggered");
+                }
+            }
+            else if (previous_round == 254) {
+                thread delayed_flash_255();
+            }
+            previous_round = current_round;
+        }
+        wait(0.5);
+    }
+}
+
+function delayed_flash_255() {
+    level endon("end_game");
+    // IPrintLnBold("Round 254 completed - Flash will trigger in 20 seconds for Round 255...");  
+    wait(20);
+    SetDvar("cg_flashScriptHashes", "1");
+    // IPrintLnBold("Flash Triggered (Round 255)");
 }
